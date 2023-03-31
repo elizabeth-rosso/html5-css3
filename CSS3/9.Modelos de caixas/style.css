@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+background-color: dimgray;
+margin: 0px;
+}
+header{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+nav{
+    background-color: rgb(80, 78, 78);
+    padding: 3px;
+    text-align: center;
+    box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.458);
+}
+nav > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 50px;
+}
+nav :hover{
+    color: blue;
+}
+article{
+    background-color: rgb(132, 133, 134);
+    padding: 5px;
+}
+article > aside {
+    background-color: rgb(92, 87, 87);
+}
+main{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+
+}
+footer > p{
+    margin: 0px;
+}
+div#bola {
+height: 100px;
+width: 100px;
+margin: 5px;
+background-color: white;
+border-radius: 50%;
+}

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(107, 7, 64);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+h1 {
+    color: purple;
+    background-color: violet;
+}
+h2 {
+    color: rgb(255, 0, 200);
+}
+p{
+    color: aliceblue;
+}

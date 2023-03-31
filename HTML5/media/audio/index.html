@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audios</title>
+</head>
+<body>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a adicionar áudio</p>
+    <audio src="alonecolorout.mp3" controls autoplay></audio>
+    <!--MP3 WAV OGG-->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="alonecolorout.mp3" type="audio/mpeg">
+        <source src="alonecolorout.ogg" type="audio/ogg">
+        <source src="alonecolorout.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio,<a href="alonecolorout.mp3">clique aqui </a>para baixar o arquivo</p>
+    </audio>
+</body>
+</html>
