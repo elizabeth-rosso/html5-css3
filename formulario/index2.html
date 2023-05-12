@@ -5,30 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        fieldset{
+            background-color: rgb(255, 127, 210);
+            border: 2px solid rgb(106, 0, 115);
+        }
+    </style>
 </head>
 <body>
     <h1>Teste de formulário</h1>
-    <form action="cadastro.php" method="get">
-<p>
-    <label for="inome">Nome: </label>
-    <input type="text" name="nome" id="inome" required maxlength="20" placeholder="Nome completo" autocomplete="name">
-</p>
-<p>
-    <label for="imedia">Média: </label>
-    <input type="number" name="media" id="imedia" placeholder="de 0 á 10" required min="0" max="10" step="0.1">
-</p>
-<p>
-    <label for="imes">Período letivo: </label>
-    <input type="month" name="mes" id="imes">
-</p>
-<p>
-    <label for="idia">Dia da prova: </label>
-    <input type="date" name="dia" id="idia" >
-</p>
-<p>
-    <label for="ihora">Horário da Prova: </label>
-    <input type="time" name="hora" id="ihora">
-</p>
+    <fieldset>
+        <form action="cadastro.php" method="get">
+        <p>
+        <label for="inome">Nome: </label>
+        <input type="text" name="nome" id="inome" required maxlength="20" placeholder="Nome completo" autocomplete="name">
+        </p>
+        <p>
+        <label for="imedia">Média: </label>
+        <input type="number" name="media" id="imedia" placeholder="de 0 á 10" required min="0" max="10" step="0.1">
+        </p>
+        <p>
+        <label for="imes">Período letivo: </label>
+        <input type="month" name="mes" id="imes">
+        </p>
+        <p>
+        <label for="idia">Dia da prova: </label>
+        <input type="date" name="dia" id="idia" >
+        </p>
+        <p>
+        <label for="ihora">Horário da Prova: </label>
+        <input type="time" name="hora" id="ihora">
+        </p>
+        <p>
+        <label for="iemail">E-mail: </label>
+        <input type="email" name="email" id="iemail" autocomplete="email" required>
+        </p>
+        <p>
+        <label for="itel">Telefone: </label>
+        <input type="tel" name="tel" id="itel" autocomplete="tel" require pattern="^\d{4,5}-\d{4}$">
+        </p>
+    </fieldset>
 <p>
     <input type="submit" value="Enviar">
     <input type="reset" value="Limpar">
