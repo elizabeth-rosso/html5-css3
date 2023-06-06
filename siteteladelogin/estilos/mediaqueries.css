@@ -7,12 +7,13 @@
     --cor04:#05AFF2;
     --cor05:#05C7F2;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
     body{
         background-image: linear-gradient(to top, var(--cor03), var(--cor01));
     }
     section#login{
         width: 80vw;
+        height: 350px;
     }
     section#login > div#imagem{
         float: left;
@@ -24,6 +25,14 @@
         float: right;
         width: 70%;
     }
+    div#formulario > h1 {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 2em;
+    }
+    div#formulario > p {
+        font-size: 1em;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -32,15 +41,25 @@
     }
     section#login{
         width: 950px;
+        height: 350px;
     }
     section#login > div#imagem{
-        float: left;
+        background-position: bottom center   ;
+        float: right;
         width: 30%;
         height: 100vh;
         
     }
     section#login > div#formulario {
-        float: right;
+        float: left;
         width: 70%;
+    }
+    div#formulario > h1 {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 2em;
+    }
+    div#formulario > p {
+        font-size: 1.2em;
     }
 }
